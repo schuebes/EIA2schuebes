@@ -1,0 +1,142 @@
+/*
+#00ACE9 blau
+#D43F3F rot
+#6A9A1F grün
+#F6F6E8 hell
+#404040
+*/
+
+
+/* Mobile First Ansatz, alle Style Eigenschaften die allgemein für alle responsive AnkerPunkte gelten und die speziellen Werte für mobile First */
+
+body				{
+				font-family:'Actor', sans-serif;
+				width: 100%;
+				background-color: white;
+				}
+#h1				{
+				font-family: 'Russo One', sans-serif;
+				color: white;
+				position: fixed;
+				top: -1em;
+				width: 120%;
+				padding-top: 1em;
+				padding-bottom: 0.2em;
+				padding-left:2em;
+				padding-right: ;
+				margin-left: -2em;
+				background-color: white;
+				z-index: 100;
+				background-color: black;
+				}
+h1				{
+				width: 20em;
+				float:left;
+				}
+#logo			{
+				width: 7em;
+				position: absolute;
+				right: 20%;
+				top: 1.5em;
+				}
+h2				{
+				font-family: 'Russo One', sans-serif;
+				width: 120%;
+				margin-top: 8em;
+				margin-left: -0.5em;
+				padding-top: 0.2em;
+				padding-left: 0.5em;
+				padding-bottom: 0.2em;
+				color: white ;
+				background-color: black;
+				position: fixed;
+				top: -4.5em;
+				box-shadow: 5px 5px 5px grey;
+				z-index:150;
+				}
+#background 		{
+				width: 100%;
+				position: absolute;
+				top: 5em;
+				left: 0em;
+				z-index:90 ;
+				
+				}
+#backgroundpicture{
+				z-index: 10;
+				
+				
+				}
+#holder			{
+				width: 100%;
+				height: 12em;
+				}
+#backtotop 		{
+    				display: none; /* Hidden by default */
+   			 	position: fixed; /* Fixed/sticky position */
+    				bottom: 20px; /* Place the button at the bottom of the page */
+    				right: 5px; /* Place the button 30px from the right */
+    				z-index: 99; /* Make sure it does not overlap */
+    				border: none; /* Remove borders */
+    				outline: none; /* Remove outline */
+    				background-color: transparent;
+    				color: black; /* Text color */
+    				cursor: n-resize; /* Add a mouse pointer on hover */
+    				padding: 3px; /* Some padding */
+    				font-family: 'Russo One', sans-serif;
+    				font-size: 18px; /* Increase font size */
+    				text-shadow: 5px 5px 5px grey;
+    				}
+#backtotop:hover {
+    				color: #00ACE9 ; /* Add a dark-grey background on hover */
+				}
+				
+				footer			{
+				
+				clear: left;
+				padding-top: 5em;
+				padding-bottom: 3.5em;
+				margin-top: 60em;
+				
+				
+			
+				}				
+#footerlogo		{
+				width: 5em;
+				position: absolute;
+				right: 2em;
+		
+				
+				}
+
+a				{
+				text-decoration: none;
+				font-weight: bold;
+				color: #00ACE9;
+}
+
+a:hover			{
+				color: black;
+}	
+
+#footer			{
+				background-color: black;
+				color: white;
+				font-family: 'Russo One', sans-serif;
+				margin-left: -1em;
+				padding-left: 1em;
+				padding-top: 0.2em;
+				padding-bottom: 0.5em;
+				box-shadow: 5px 5px 5px 5px grey;
+				position: fixed;
+				bottom: 0em;
+				width: 120%;
+				}		
+#instagram		{
+				width: 1.2em;
+				margin-left: 2em;
+				}	
+#youtube			{
+				width: 4em;
+				margin-left: 2em;
+				}
