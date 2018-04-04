@@ -27,11 +27,10 @@ namespace Boxes {
         }
     }
 
-
     function placeDiv(_color: string, _x: number, _y: number, _width: number, _height: number): void {
         let div: HTMLDivElement = document.createElement("div");
         document.body.appendChild(div);
-        
+
         let s: CSSStyleDeclaration = div.style;
         s.border = "thin solid black";
         s.position = "absolute";
