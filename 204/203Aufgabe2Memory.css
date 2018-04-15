@@ -1,0 +1,14 @@
+#game {
+	float: left;
+}
+
+.card {
+	background-color: green;
+	height: 5em;
+	width: 5em;
+	margin:2em;
+	
+	
+	text-align: center;
+	
+}
