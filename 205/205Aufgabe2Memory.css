@@ -1,0 +1,84 @@
+html{
+	min-height: 100%;
+}
+h1	{
+	font-size:
+}
+
+body {
+	font-family: 'Black Han Sans', sans-serif;
+	background-color: #90EE90;
+	
+	
+}
+#game {
+	height: 80%;
+}
+
+.card {
+	border-radius: 0.5em;
+	width: 8em;
+	height: 8em;
+	background-color: #006400;
+	font-size: 1.5em;
+	margin:0.2em;
+	text-align: center;
+	vertical-align: center;
+	color: black;
+	float: left;
+	
+}
+.card p{
+	display: none;
+	
+}
+
+#Karte1, #Karte4, #Karte10, #Karte18, #Karte20, #Karte34 {
+	background-color: #228B22;
+	
+	
+}
+#Karte1 p, #Karte4 p, #Karte10 p, #Karte18 p, #Karte20 p, #Karte34 p {
+	display: initial;
+	color: white;
+}
+
+#Karte3 , #Karte13 , #Karte14 , #Karte2 , #Karte22 , #Karte24 {
+	background-color: #90EE90;
+	width: 8em;
+	height:8em;
+	
+	
+} 
+
+#Karte3 p, #Karte13 p, #Karte14 p, #Karte2 p, #Karte22 p, #Karte24 p{
+	display: none; 
+}
+
+.visible {
+	background-color: silver;
+}
+
+footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 20%;
+	color: #00FF7F;
+	background-color: black;
+	
+}
+
+footer div{
+	float: left;
+	width: 21%;
+	text-align: center;
+	padding: 2%;
+	}
+	
+footer div p {
+	font-size: 2em;
+	text-align: center;
+	
+}
