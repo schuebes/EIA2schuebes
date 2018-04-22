@@ -1,6 +1,6 @@
 var Aufgabe2MemoryGame;
 (function (Aufgabe2MemoryGame) {
-    var cardcontent = ["Wald", "Berg", "Hügel", "Wiese", "Wanderweg", "Straße", "Fluss", "Bach", "Wasserfall", "Baum"];
+    var cardcontent = ["Wald", "Berg", "Sarah", "Wiese", "Wanderweg", "Straße", "Fluss", "Bach", "Wasserfall", "Baum"];
     var card = [];
     var cardcharacter = ["hidden", "taken", "visible"];
     //Karten
@@ -56,10 +56,11 @@ var Aufgabe2MemoryGame;
             var classRandom = Math.floor(Math.random() * (3 - 0)) + 0;
             console.log("Card:" + i);
             console.log(random);
-            childNodeHTML = "<div  class='card' class='";
+            childNodeHTML = "<div";
             // Random Karten Auswahl
-            childNodeHTML += cardcharacter[classRandom];
-            childNodeHTML += "' id='Karte" + i + "'>";
+            console.log("Random Test" + classRandom);
+            childNodeHTML += " class='" + cardcharacter[classRandom] + "'";
+            childNodeHTML += "id='Karte" + i + "'>";
             childNodeHTML += "<p>";
             childNodeHTML += card[random];
             childNodeHTML += "</p>";

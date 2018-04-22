@@ -15,12 +15,15 @@ body {
 	height: 80%;
 }
 
-#spielfeld div{
-	float: left;
 	
 }
 
-.card {
+.hidden {
+		
+	
+	
+}
+.visible {
 	border-radius: 0.5em;
 	width: 8em;
 	height: 8em;
@@ -30,38 +33,28 @@ body {
 	text-align: center;
 	vertical-align: center;
 	color: black;
-	
-}
-.card p{
-	display: none;
-	
-}
-
-#Karte1, #Karte4, #Karte10, #Karte18, #Karte20, #Karte34 {
-	background-color: #228B22;
-	
-	
-}
-#Karte1 p, #Karte4 p, #Karte10 p, #Karte18 p, #Karte20 p, #Karte34 p {
+	float: left;
 	display: initial;
 	color: white;
 }
 
-#Karte3 , #Karte13 , #Karte14 , #Karte2 , #Karte22 , #Karte24 {
-	background-color: #90EE90;
+.taken {
+		border-radius: 0.5em;
 	width: 8em;
-	height:8em;
+	height: 8em;
+
+	font-size: 1.5em;
+	margin:0.2em;
+	text-align: center;
+	vertical-align: center;
+	color: black;
+	float: left;
+	background-color: #90EE90;
+
 	
 	
 } 
 
-#Karte3 p, #Karte13 p, #Karte14 p, #Karte2 p, #Karte22 p, #Karte24 p{
-	display: none; 
-}
-
-.visible {
-	background-color: silver;
-}
 
 footer {
 	position: fixed;

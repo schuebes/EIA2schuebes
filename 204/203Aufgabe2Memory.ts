@@ -2,7 +2,7 @@ namespace Aufgabe2MemoryGame {
     
 
  
-    var cardcontent: string []=["Wald", "Berg", "Hügel", "Wiese", "Wanderweg", "Straße", "Fluss", "Bach", "Wasserfall", "Baum"];
+    var cardcontent: string []=["Wald", "Berg", "Sarah", "Wiese", "Wanderweg", "Straße", "Fluss", "Bach", "Wasserfall", "Baum"];
     var card: string[]=[];
     var cardcharacter: string[]=["hidden", "taken", "visible"];
   
@@ -91,10 +91,12 @@ namespace Aufgabe2MemoryGame {
             console.log("Card:" + i);
               console.log(random); 
           
-            childNodeHTML = "<div  class='card' class='"; 
+            childNodeHTML = "<div"; 
 // Random Karten Auswahl
-            childNodeHTML += cardcharacter[classRandom];
-            childNodeHTML += "' id='Karte" + i + "'>";
+            console.log("Random Test" + classRandom);
+            childNodeHTML += " class='"+cardcharacter[classRandom]+"'";
+            childNodeHTML += "id='Karte" + i +"'>";
+            
             childNodeHTML += "<p>";
             childNodeHTML += card[random];
             childNodeHTML += "</p>";
