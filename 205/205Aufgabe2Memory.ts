@@ -196,7 +196,7 @@ namespace Aufgabe2MemoryGame {
             x.classList.add("visible");
             flippedCards++;
             if (flippedCards == 2) {
-                setTimeout(compareCards, 2000);
+                setTimeout(compareCards, 1000);
             }
             if (flippedCards > 2) {
                 x.classList.remove("visible");
