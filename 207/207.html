@@ -1,6 +1,15 @@
+<!--
+Aufgabe: 
+Name: Sven Schüber
+Matrikel: 258430
+Datum: 
+	
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe (Mit Unterstützung)
+-->
+
 <html lang="en">
 <head>
-<title>DatabaseClient</title>
+<title>Informatienen</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="DatabaseClient.css" type="text/css" media="screen"/>
 <script src="207Aufgabe412.js" type="text/javascript" charset="utf-8"></script>
@@ -12,32 +21,32 @@
 	
 	
 	<fieldset id="input">
-		<legend> Type student data here </legend>
+		<legend> Deine Informationen </legend>
 		<input type="text" name="name" placeholder="name"/>
 		<input type="text" name="firstname" placeholder="firstname"/>
 		<input type="text" name="matrikel" placeholder="matrikel"/>
 		<input type="text" name="Datalist" list="options" placeholder="Studiengang"/>
 		<datalist id="options">
-			<option value="MKB"> </option>
 			<option value="OMB"> </option>
-			<option value="MIB"> </option>			
+			<option value="MIB"> </option>
+			<option value="MKB"> </option>			
 		</datalist>
 		<input type="number" name="age" placeholder="age" min="1" max="120"/>
 		<input type="radio" name="gender" value="male" id="male"/>
-		<label for="male">Male</label>
+		<label for="male">Männlich</label>
 		<input type="radio" name="gender" value="female" id="female"/>
-		<label for="female">Female</label>
+		<label for="female">Weiblich</label>
 		<hr/>
-		<button type="button" id="insert">Insert to database</button>
+		<button type="button" id="insert">Informationen bestätigen</button>
 	</fieldset>
 	<fieldset id="output">
-		<legend> All student data </legend>
+		<legend> Studenten Informationen </legend>
 		<button type="button" id="refresh">Refresh</button>
 		<textarea rows="20" cols="90"> </textarea>
 	</fieldset>
 	<fieldset>
 	Suche 
-	 <input type="number" name="search" placeholder="Matrikelnr.">
+	 <input type="number" name="search" placeholder="Matrikelnummer.">
       <button type="button" id="search">Suche</button>
       <br>
       <textarea rows="2" cols="60"></textarea>
