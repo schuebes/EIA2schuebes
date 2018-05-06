@@ -1,0 +1,106 @@
+html{
+	min-height: 100%;
+}
+h1	{
+	font-size:
+}
+
+body {
+	font-family: 'Black Han Sans', sans-serif;
+	background-color: #90EE90;
+	
+	
+}
+#game {
+	height: 80%;
+}
+
+/*.card {
+	border-radius: 0.5em;
+	width: 8em;
+	height: 8em;
+	background-color: #006400;
+	font-size: 1.5em;
+	margin:0.2em;
+	text-align: center;
+	vertical-align: center;
+	color: black;
+	float: left;
+	
+}
+.card p{
+	display: none;
+	
+}*/
+.hidden{
+	border-radius: 0.5em;
+	width: 8em;
+	height: 8em;
+	background-color: #006400;
+	font-size: 1.5em;
+	margin:0.2em;
+	text-align: center;
+	vertical-align: center;
+	color: black;
+	float: left;
+	
+}
+.hidden p {
+		display:none;
+}
+.taken{
+	border-radius: 0.5em;
+	width: 8em;
+	height: 8em;
+	background-color: #006400;
+	font-size: 1.5em;
+	margin:0.2em;
+	text-align: center;
+	vertical-align: center;
+	color: black;
+	float: left;
+	transform:scale(0);
+		
+}
+
+.taken p {
+		display:none;
+}
+.visible {
+	border-radius: 0.5em;
+	width: 8em;
+	height: 8em;
+	background-color: #0d4b15;
+	font-size: 1.5em;
+	margin:0.2em;
+	text-align: center;
+	vertical-align: center;
+	color: black;
+	float: left;
+	color:white;
+
+}
+
+ /** footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	height: 20%;
+	color: #00FF7F;
+	background-color: black;
+	
+}
+
+footer div{
+	float: left;
+	width: 21%;
+	text-align: center;
+	padding: 2%;
+	}
+	
+.player {
+	font-size: 2em;
+	text-align: center;
+	
+}

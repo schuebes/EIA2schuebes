@@ -1,0 +1,94 @@
+<!--
+Aufgabe: Aufgabe 03 (205)
+Name: Sven Schüber
+Matrikel: 258430
+Datum: 
+	
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe (Mit Unterstützung)
+-->
+<!DOCTYPE html>
+<html lang="de">
+<meta charset="UTF-8">
+<head>
+<title>MEMORY</title>
+<link rel="stylesheet" type="text/css" href="205Aufgabe2Memory.css">
+<meta name="viewport" content="width=device-width, initial-scale:1.0">
+<script src="Memory.js" type="text/javascript" charset="utf-8"></script>
+<script src="spieler.js" type="text/javascript" charset="utf-8"></script>
+<script src="kartendecks.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+
+<div id="starteinstellungen">
+
+    <h2 class="ueberschrift">Memory</h2>
+
+    <br>
+    
+
+    <div id="kartensatz">
+        <h3>Kartendecks</h3>
+        <input type="radio" name="Radiogroup" value="animals" id="radio5" checked onclick="Memory.radioCardClick(this)"/>
+        <label for="radio5">Schwarzwald</label>
+        <input type="radio" name="Radiogroup" value="buchstaben" id="radio6" onclick="Memory.radioCardClick(this)"/>
+        <label for="radio6">Buchstaben</label>
+        <input type="radio" name="Radiogroup" value="zahlen" id="radio7" onclick="Memory.radioCardClick(this)"/>
+        <label for="radio7">Zahlen</label>
+    </div>
+
+    <br>
+    
+  
+
+    <div>
+        <h3>Kartenpaare</h3>
+        <input id="kartenpaare" type="range" name="Stepper" step="1" min="5" max="10" value="5" oninput="MemoryInputEvent(this.value)"/>
+        <label for="kartenpaare" id="kartenpaare-label">5</label>
+    </div>
+
+    <br>
+  
+        <div id="spieleranzahl">
+        <h3>Spieleranzahl</h3>
+        
+        
+        <input type="radio" name="radio" value="1" id="1" checked onclick="Aufgabe_5.radioSpielerClick(this)"/>
+        <label for="1">1</label>
+        <input type="radio" name="radio" value="2" id="2" onclick="Aufgabe_5.radioSpielerClick(this)"/>
+        <label for="2">2</label>
+        <input type="radio" name="radio" value="3" id="3" onclick="Aufgabe_5.radioSpielerClick(this)"/>
+        <label for="3">3</label>
+        <input type="radio" name="radio" value="4" id="4" onclick="Aufgabe_5.radioSpielerClick(this)"/>
+        <label for="4">4</label>
+    </div>
+
+    <br>
+
+    <div id="name">
+        <h3>Spielernamen</h3>       
+        <h4 id="player1-label">Spieler 1</h4>
+        <input id="player1" type="text" name="Text" placeholder="Dein Name" value="" required />
+        <h4 id="player2-label" >Spieler 2</h4>
+        <input id="player2" type="text" name="Text" placeholder="Dein Name" value="" />
+        <h4 id="player3-label" >Spieler 3</h4>
+        <input id="player3" type="text" name="Text" placeholder="Dein Name" value="" />
+        <h4 id="player4-label">Spieler 4</h4>
+        <input id="player4" type="text" name="Text" placeholder="Dein Name" value="" />
+    </div>
+
+    <div id="spielstart">
+        <button onclick="Memory.main()">LOS GEHT'S!</button>
+    </div>
+
+</div>
+
+<div id="Spielbrett">
+    <div id="Game"></div>
+    <footer>
+    <div id="Gamer"></div>
+    </footer>
+</div>
+
+</body>
+</html>
