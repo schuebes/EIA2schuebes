@@ -1,5 +1,5 @@
-var seaworld_animation;
-(function (seaworld_animation) {
+var seaworld_inheratance;
+(function (seaworld_inheratance) {
     class movingobjects {
         constructor(_x, _y) {
             this.x = _x;
@@ -11,6 +11,6 @@ var seaworld_animation;
         move() {
         }
     }
-    seaworld_animation.movingobjects = movingobjects;
-})(seaworld_animation || (seaworld_animation = {}));
+    seaworld_inheratance.movingobjects = movingobjects;
+})(seaworld_inheratance || (seaworld_inheratance = {}));
 //# sourceMappingURL=movingobjects.js.map

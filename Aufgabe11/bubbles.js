@@ -1,17 +1,17 @@
-var seaworld_animation;
-(function (seaworld_animation) {
-    class bubbles extends seaworld_animation.movingobjects {
+var seaworld_inheratance;
+(function (seaworld_inheratance) {
+    class Bubbles extends seaworld_inheratance.movingobjects {
         constructor(_x, _y) {
             super(_x, _y);
         }
         //Methode 1 - Zeichnen
         draw() {
-            seaworld_animation.crc2.fillStyle = "#fbbce7";
-            seaworld_animation.crc2.beginPath();
-            seaworld_animation.crc2.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-            seaworld_animation.crc2.closePath();
-            seaworld_animation.crc2.stroke();
-            seaworld_animation.crc2.fill();
+            seaworld_inheratance.crc2.fillStyle = "#fbbce7";
+            seaworld_inheratance.crc2.beginPath();
+            seaworld_inheratance.crc2.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+            seaworld_inheratance.crc2.closePath();
+            seaworld_inheratance.crc2.stroke();
+            seaworld_inheratance.crc2.fill();
         }
         move() {
             this.x -= 0;
@@ -21,6 +21,6 @@ var seaworld_animation;
             }
         }
     }
-    seaworld_animation.bubbles = bubbles;
-})(seaworld_animation || (seaworld_animation = {}));
+    seaworld_inheratance.Bubbles = Bubbles;
+})(seaworld_inheratance || (seaworld_inheratance = {}));
 //# sourceMappingURL=bubbles.js.map

@@ -1,4 +1,4 @@
-namespace seaworld_animation {
+namespace seaworld_inheratance {
     
     export class flakeClass extends movingobjects {
         r: number;

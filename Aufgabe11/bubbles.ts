@@ -1,6 +1,6 @@
-namespace seaworld_animation {
+namespace seaworld_inheratance {
     
-    export class bubbles extends movingobjects {
+    export class Bubbles extends movingobjects {
        radius: number;
         
         constructor (_x:number, _y:number) {

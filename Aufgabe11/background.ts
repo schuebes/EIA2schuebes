@@ -1,8 +1,11 @@
-namespace seaworld_animation {
+namespace seaworld_inheratance {
     
     
     // Erstellen des Hintergrunds
     export function drawBackground(): void {
+        
+        crc2.fillStyle = "rgb(135,206,235)";
+        crc2.fillRect(0, 0, 1200, 900);
         
          //Sand zeichnen
         drawSand(0,0);

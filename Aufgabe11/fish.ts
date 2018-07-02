@@ -1,6 +1,6 @@
-namespace seaworld_animation {
+namespace seaworld_inheratance {
     
-      export class fish extends movingobjects {
+      export class Fish extends movingobjects {
         
         
         constructor (_x: number, _y:number) {

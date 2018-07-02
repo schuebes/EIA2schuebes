@@ -1,4 +1,4 @@
-namespace seaworld_animation {
+namespace seaworld_inheratance{
     
     window.addEventListener("load", init);
     export let crc2 : CanvasRenderingContext2D;
@@ -24,14 +24,14 @@ namespace seaworld_animation {
         
         // Fische erstellen
         for (let i: number = 0; i < n; i++) {
-            let fish : fish = new fish(Math.random() *crc2.canvas.width, Math.random()*crc2.canvas.height);
+            let fish : Fish = new Fish(Math.random() *crc2.canvas.width, Math.random()*crc2.canvas.height);
             movingobjects.push(fish);
         }
         
         
        // Luftblasen erstellen
        for (let i: number = 0; i < 17; i++) {
-            let bubbles : bubbles = new bubbles(Math.random()* (300-10) + 400, Math.random() * 180);
+            let bubbles : Bubbles = new Bubbles(Math.random()* (300-10) + 400, Math.random() * 180);
             bubbles.radius = Math.random() *10;
             movingobjects.push(bubbles);
        }
@@ -55,12 +55,14 @@ namespace seaworld_animation {
         
         }
     
-    
+
     function drawObjects(): void {
-        for (let i:number = 0; i < movingobjects.length; i++) {
+
+        for (let i: number = 0; i < movingobjects.length; i++) {
             movingobjects[i].draw();
-            }
         }
+
+    }
     
     
     function moveObjects(): void {
